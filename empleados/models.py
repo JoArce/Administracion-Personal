@@ -11,7 +11,7 @@ class Empleado(models.Model):
     email = models.CharField(max_length=255)
     telefono = models.CharField(max_length=255)
 
-def __str__(self):
-    return f'Empleado {self.id}: rut {self.rut} nombre {self.nombre} {self.apellido} '
+    def __str__(self):
+        return f'Empleado {self.id}: Rut {self.rut}, Nombre {self.nombre} {self.apellido} '
 
 
